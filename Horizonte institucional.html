@@ -30,16 +30,16 @@
 									<header class="main">
 										<h1>Horizonte institucional</h1>
 									</header>
-
-      <script>
+			
+			<script type = "text/javascript">
           function displayNextImage() {
               x = (x === images.length - 1) ? 0 : x + 1;
-              document.getElementById("images/pic (1).jpeg").src = images[x];
+              document.getElementById("img").src = images[x];
           }
 
           function displayPreviousImage() {
               x = (x <= 0) ? images.length - 1 : x - 1;
-              document.getElementById("images/pic (2).jpeg").src = images[x];
+              document.getElementById("img").src = images[x];
           }
 
           function startTimer() {
@@ -47,10 +47,18 @@
           }
 
           var images = [], x = -1;
-          images[0] = "images/pic (1).jpeg";
-          images[1] = "images/pic (2).jpeg";
-          images[2] = "image3.jpg";
+          images[0] = "images/pic (3).jpeg";
+          images[1] = "images/pic (7).jpeg";
+          images[2] = "images/pic (6).jpeg";
       </script>
+   </head>
+
+   <body onload = "startTimer()">
+       <span class="image main"> <img  id="img" src="images/pic (2).jpeg" alt="" /></span>
+      
+   
+   </body>
+
                                      <hr class="major" />
                                      <h2>MISION</h2>
 								     <p>Implementando el aprendizaje significativo, con recursos propios y mediante convenios interinstitucionales, ofrece a sus estudiantes una educación preescolar, básica y media técnica de calidad;  formando ciudadanos con   competencias laborales generales y especificas en recreación, sistemas o gestión ambiental, que les permita desempeñarse en el sector productivo; con vocación de servicio dentro de una cultura en valores humanos, éticos morales, corporativos y ambientales para el mejoramiento de su calidad de vida.<p>
@@ -178,6 +186,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+		  <script  src="assets/js/jquery.cycle.all.js"></script>
+		 
 
 	</body>
 </html>
