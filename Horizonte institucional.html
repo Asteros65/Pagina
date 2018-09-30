@@ -30,8 +30,28 @@
 									<header class="main">
 										<h1>Horizonte institucional</h1>
 									</header>
+<script src="assets/js/jQuery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        function changeImage()
+        {
+            requestAnimationFrame(changeImage);
 
-									<span class="image main"><img src="images/pic (1).jpeg" alt="" /></span>
+            var url = document.getElementById('Change_Image').src;
+
+            if (url == 'Resources/Share1.bmp')
+            {
+                document.getElementById('Change_Image').src = 'Resources/Share2.bmp';
+            }
+
+            else
+            {
+                if (url == 'Resources/Share2.bmp')
+                {
+                    document.getElementById('Change_Image').src = 'Resources/Share1.bmp';
+                }
+            }
+        }    
+    </script>
                                      <hr class="major" />
                                      <h2>MISION</h2>
 								     <p>Implementando el aprendizaje significativo, con recursos propios y mediante convenios interinstitucionales, ofrece a sus estudiantes una educación preescolar, básica y media técnica de calidad;  formando ciudadanos con   competencias laborales generales y especificas en recreación, sistemas o gestión ambiental, que les permita desempeñarse en el sector productivo; con vocación de servicio dentro de una cultura en valores humanos, éticos morales, corporativos y ambientales para el mejoramiento de su calidad de vida.<p>
