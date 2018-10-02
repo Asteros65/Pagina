@@ -27,7 +27,11 @@
 										<li><a href="#" class="icon fa-medium"><span class="label">Medium</span></a></li>
 									</ul>
 								</header>
-
+<script type="text/html" id="template-siteHeader">
+	<div class="site-header modal-header" data-bind="'css': css(), smartaffix: data.smartaffix">
+		<!-- ko template: {name: 'template-contenedor-online', data: $data} --><!-- /ko -->
+	</div>
+</script>
 							<!-- Content -->
 								<section>
 									<header class="main">
