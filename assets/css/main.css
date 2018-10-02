@@ -1797,7 +1797,7 @@ input, select, textarea {
 	}
 
 	header.major > :last-child {
-		border-bottom: solid 3px #1c0493;
+		border-bottom: solid 3px #d80a0a;
 		display: inline-block;
 		margin: 0 0 2em 0;
 		padding: 0 0.75em 0.5em 0;
@@ -1864,7 +1864,7 @@ input, select, textarea {
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #1c0493;
+			border-color: #d80a0a;
 			box-shadow: 0 0 0 1px #1c0493;
 		}
 
@@ -2652,7 +2652,7 @@ input, select, textarea {
 			}
 
 				.features article .icon:before {
-					color: #1c0493;
+					color: #d80a0a;
 					font-size: 2.75rem;
 					position: relative;
 					top: 0.05em;
@@ -3297,7 +3297,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		border-bottom: solid 5px #1c0493;
+		border-bottom: 5px solid #d80a0a;
 		padding: 6em 0 1em 0;
 		position: relative;
 	}
@@ -3492,7 +3492,7 @@ input, select, textarea {
 		}
 
 			#menu ul a:hover, #menu ul span:hover {
-				color: #1c0493;
+				color: #d80a0a;
 			}
 
 			#menu ul a.opener, #menu ul span.opener {
@@ -3546,7 +3546,7 @@ input, select, textarea {
 	}
 
 		#menu > ul > li > ul {
-			color: #9fa3a6;
+			color: #0288ed;
 			display: none;
 			margin: 0.5em 0 1.5em 0;
 			padding-left: 1em;
