@@ -153,13 +153,13 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		border-bottom: dotted 1px;
-		color: #0101b7;
+		color: #d80a0a;
 		text-decoration: none;
 	}
 
 		a:hover {
 			border-bottom-color: #0101b7;
-			color: #0101b7 !important;
+			color: #d80a0a !important;
 		}
 
 			a:hover strong {
@@ -3270,7 +3270,7 @@ input, select, textarea {
 			}
 
 				#sidebar .toggle:before {
-					color: #7f888f;
+					color: #d80a0a;
 					margin-left: -0.0625em;
 					margin-top: -0.25em;
 					font-size: 1.1rem;
