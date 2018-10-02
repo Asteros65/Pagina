@@ -2286,7 +2286,7 @@ input, select, textarea {
 			}
 
 			ul.contact li:before {
-				color: #ad0000;
+				color: #ad0000F;
 				display: inline-block;
 				font-size: 1.5em;
 				height: 1.125em;
@@ -2463,8 +2463,8 @@ input, select, textarea {
 		background-color: transparent;
 		border-radius: 0.375em;
 		border: 0;
-		box-shadow: inset 0 0 0 2px #1c0493;
-		color: #1c0493 !important;
+		box-shadow: inset 0 0 0 2px #ad0000;
+		color: #ad0000 !important;
 		cursor: pointer;
 		display: inline-block;
 		font-family: "Roboto Slab", serif;
