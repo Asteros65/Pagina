@@ -39,12 +39,10 @@
 										<h1>Generic</h1>
 									</header>
 
-<textarea name="content" id="editor">
-           
-
-
-           
-        </textarea>
+<?php
+    $editor_data = $_POST[ 'content' ];
+    echo $editor_data
+?>
 								</section>
 
 						</div>

@@ -30,6 +30,9 @@
 					$body.removeClass('is-preload');
 				}, 100);
 			});
+			document.querySelector('[data-switch-contrast]').addEventListener('click', function() {
+  document.body.classList.toggle('nightmode');
+});
 
 		// ... stopped resizing.
 			var resizeTimeout;

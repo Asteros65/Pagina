@@ -23,7 +23,7 @@
 								<header id="header">
 									<a href="lobby.html" class="logo"><strong>Liceo Nueva Estancia</strong></a>
 									<ul class="icons">
-										<button data-switch-contrast aria-hidden>Night </button>
+										
 										<li><a href="https://www.facebook.com/prom.lines" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 
 									</ul>
@@ -37,7 +37,7 @@
 
 <body>
     <h1>Classic editor</h1>
-    <form action="[URL]" method="post">
+    <form action="Comunicados.php" method="post">
         <textarea name="content" id="editor">
             &lt;p&gt;This is some sample content.&lt;/p&gt;
         </textarea>

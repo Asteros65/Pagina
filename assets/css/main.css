@@ -25,6 +25,7 @@ section, summary, time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;}
 
+}
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;}
@@ -101,6 +102,25 @@ input, select, textarea {
 	body {
 		background: #ffffff;
 	}
+	.nightmode {
+    background: #000000;
+ 
+}
+
+
+* {
+    transition: all .15s ease-in;
+}
+
+body {
+  background-color: var(--color-page-background);
+  
+  color: var(--color-primary-dark);
+}
+
+
+
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after, body.is-resizing *, body.is-resizing *:before, body.is-resizing *:after {
 			-moz-animation: none !important;
@@ -112,6 +132,7 @@ input, select, textarea {
 			-ms-transition: none !important;
 			transition: none !important;
 		}
+
 
 /* Type */
 
@@ -155,17 +176,22 @@ input, select, textarea {
 		border-bottom: dotted 1px;
 		color: #d80a0a;
 		text-decoration: none;
+
 	}
 
-		a:hover {
-			border-bottom-color: #0101b7;
-			color: #d80a0a !important;
-		}
+.nightmode a {
+	color: #2a04a5;
+  
+}
 
-			a:hover strong {
-				color: inherit;
-			}
 
+a {
+
+		color
+		
+
+}
+	
 	strong, b {
 		color: #3d4449;
 		font-weight: 600;
@@ -1802,6 +1828,17 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 		padding: 0 0.75em 0.5em 0;
 	}
+	.nightmode header.major > :last-child {
+  
+border-bottom: 3px solid #2a04a5;
+}
+
+
+ header.major > :last-child{
+border-bottom:
+	}
+
+
 
 	header.main > :last-child {
 		margin: 0 0 1em 0;
@@ -1867,6 +1904,18 @@ input, select, textarea {
 			border-color: #d80a0a;
 			box-shadow: 0 0 0 1px #1c0493;
 		}
+		.nightmode textarea:focus {
+	border-color: #2a04a5;
+  
+}
+
+
+textarea:focus {
+
+		color
+		
+
+}
 
 	select {
 		background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' preserveAspectRatio='none' viewBox='0 0 40 40'%3E%3Cpath d='M9.4,12.3l10.4,10.4l10.4-10.4c0.2-0.2,0.5-0.4,0.9-0.4c0.3,0,0.6,0.1,0.9,0.4l3.3,3.3c0.2,0.2,0.4,0.5,0.4,0.9 c0,0.4-0.1,0.6-0.4,0.9L20.7,31.9c-0.2,0.2-0.5,0.4-0.9,0.4c-0.3,0-0.6-0.1-0.9-0.4L4.3,17.3c-0.2-0.2-0.4-0.5-0.4-0.9 c0-0.4,0.1-0.6,0.4-0.9l3.3-3.3c0.2-0.2,0.5-0.4,0.9-0.4S9.1,12.1,9.4,12.3z' fill='rgba(210, 215, 217, 0.75)' /%3E%3C/svg%3E");
@@ -2479,6 +2528,17 @@ input, select, textarea {
 		text-transform: uppercase;
 		white-space: nowrap;
 	}
+	.nightmode .button {
+  
+box-shadow: inset 0 0 0 2px #2a04a5;
+		color: #2a04a5 !important;
+}
+
+
+ .button{
+box-shadow: 
+		color: 
+	}
 
 		input[type="submit"]:hover,
 		input[type="reset"]:hover,
@@ -2657,6 +2717,16 @@ input, select, textarea {
 					position: relative;
 					top: 0.05em;
 				}
+				.nightmode .features article .icon:before {
+  
+color: #2a04a5;
+}
+
+
+ #header{
+border-bottom:
+	}
+
 
 				.features article .icon:after {
 					-moz-transform: rotate(45deg);
@@ -3041,43 +3111,6 @@ input, select, textarea {
 
 /* Sidebar */
 
-	#search form {
-		text-decoration: none;
-		position: relative;
-	}
-
-		#search form:before {
-			-moz-osx-font-smoothing: grayscale;
-			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
-			font-style: normal;
-			font-weight: normal;
-			text-transform: none !important;
-		}
-
-		#search form:before {
-			-moz-transform: scaleX(-1);
-			-webkit-transform: scaleX(-1);
-			-ms-transform: scaleX(-1);
-			transform: scaleX(-1);
-			color: #7f888f;
-			content: '\f002';
-			cursor: default;
-			display: block;
-			font-size: 1.5em;
-			height: 2em;
-			line-height: 2em;
-			opacity: 0.325;
-			position: absolute;
-			right: 0;
-			text-align: center;
-			top: 0;
-			width: 2em;
-		}
-
-		#search form input[type="text"] {
-			padding-right: 2.75em;
-		}
 
 	#sidebar {
 		-moz-flex-grow: 0;
@@ -3097,6 +3130,24 @@ input, select, textarea {
 		position: relative;
 		width: 26em;
 	}
+	.nightmode {
+    background-color: #000000;
+  
+}
+
+
+* {
+    transition: all .15s ease-in;
+}
+
+#sidebar {
+  background-color: var(--color-page-background);
+  
+  color: var(--color-primary-dark);
+}
+
+
+	
 
 		#sidebar h2 {
 			font-size: 1.3888888889em;
@@ -3300,6 +3351,15 @@ input, select, textarea {
 		border-bottom: 5px solid #d80a0a;
 		padding: 6em 0 1em 0;
 		position: relative;
+	}
+	.nightmode #header {
+  
+border-bottom: 5px solid #2a04a5;
+}
+
+
+ #header{
+border-bottom:
 	}
 
 		#header > * {
@@ -3566,3 +3626,4 @@ input, select, textarea {
 			margin-top: 0;
 			padding-top: 0;
 		}
+		
