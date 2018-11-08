@@ -50,6 +50,7 @@
 					}, 100);
 
 			});
+			
 
 	// Fixes.
 
@@ -236,7 +237,7 @@
 					.trigger('resize.sidebar-lock');
 
 				});
-			
+
 
 	// Menu.
 		var $menu = $('#menu'),

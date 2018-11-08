@@ -1,67 +1,56 @@
 <!DOCTYPE HTML>
+
 <html>
 	<head>
-		<title>Liceo Nueva Estancia</title>
+		<title>Editor</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-
+		<script src="assets/js/ckeditor.js"></script>
 	</head>
 	<body class="is-preload">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
+
 				<!-- Main -->
+			
 					<div id="main">
 						<div class="inner">
-							<div class="chat-popup" id="myForm">
-  <form action="/action_page.php" class="form-container">
-    <h1>Chat</h1>
-
-    <label for="msg"><b>Message</b></label>
-    <textarea placeholder="Type message.." name="msg" required><textarea>
-
-    <button type="submit" class="btn">Send</button>
-    <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
-  </form>
-</div>
 
 							<!-- Header -->
 								<header id="header">
-									<a href="lobby.html" class="logo"><strong>Liceo Nueva Estancia</strong> </a>
+									<a href="lobby.html" class="logo"><strong>Liceo Nueva Estancia</strong></a>
 									<ul class="icons">
-										<li> <a class="icon far fa-moon"data-switch-contrast aria-hidden></a> </li>
-								
-										<li><a href="https://www.facebook.com/prom.lines" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
 										
+										<li><a href="https://www.facebook.com/prom.lines" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+
 									</ul>
 								</header>
 
 							<!-- Content -->
 								<section>
 									<header class="main">
-										<h1>Sedes</h1>
+										<h1>Editor</h1>
 									</header>
-									<hr class="major" />
-									<h2>Sede Preescolar</h2>
 
-									<span class="image main"><img src="images/pic (23).jpeg" alt="" /></span>
-
-									<hr class="major" />
-
-                                     <h2>Sede Basica</h2>
-
-                                     <span class="image main"><img src="images/pic (21).jpeg" alt="" /></span>
-
-                                     <hr class="major" />
-
-                                     <h2>Sede Media</h2>
-
-                                     <span class="image main"><img src="images/pic (20).jpeg" alt="" /></span>
-
-									
+<body>
+    
+    <form action="Comunicados.php" method="post">
+        <textarea name="content" id="editor">
+            &lt;p&gt;This is some sample content.&lt;/p&gt;
+        </textarea>
+        <p><input type="submit" value="Submit"></p>
+    </form>
+    <script>
+        ClassicEditor
+            .create( document.querySelector( '#editor' ) )
+            .catch( error => {
+                console.error( error );
+            } );
+    </script>
+</body>
 
 								</section>
 
@@ -72,7 +61,12 @@
 					<div id="sidebar">
 						<div class="inner">
 
-							
+							<!-- Search -->
+								<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>
 
 							<!-- Menu -->
 								<nav id="menu">
@@ -90,22 +84,34 @@
 												<li><a href="Sedes.html">Sedes</a></li>
 												<li><a href="Horario.html">Horario
 											</a></li>
+											</ul>
+										</li>
+									
+										<li>
+											<span class="opener">Gestion</span>
+											<ul>
+												<li><a href="#">Mapa de procesos</a></li>
+												<li><a href="#">Direccionamiento Estrategico</a></li>
+												<li><a href="#">Proceso Academico</a></li>
+												<li><a href="#">Proceso de Convivencia</a></li>
+												<li><a href="#">Proceso de Bienestar</a></li>
+												<li><a href="#">Proceso Gestion Pedagogica</a></li>
+												<li><a href="#">Proceso de Talento Humano</a></li>
+												<li><a href="#">Proceso Administrativo Y financiero</a></li
+												>
 
 											</ul>
-
-									
 										</li>
-										<li><a href="Editor.html">Editor</a></li>
-										<li><a href="https://liceolanuevaestancia.ciudadeducativa.com/">Ciudad Educativa</a></li>
 
 									
 										
-						
+								
 										
 									</ul>
 								</nav>
 
 							
+							<!-- Section -->
 								<section>
 									<header class="major">
 										<h2>Contactanos</h2>
@@ -118,6 +124,7 @@
 									</ul>
 								</section>
 
+	
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/browser.min.js"></script>
